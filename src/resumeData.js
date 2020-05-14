@@ -1,0 +1,123 @@
+import Zombo from './images/projects/zombo.PNG';
+
+let resumeData = {
+	imagebaseurl: 'https://rbhatia46.github.io/',
+	name: 'Wesley Chen',
+	role: 'Frontend Developer',
+	roleDescription:
+		'Experienced in Ruby on Rails and JavaScript based programming with a background in project organization.',
+	socialLinks: [
+		{
+			name: 'linkedin',
+			url: 'https://www.linkedin.com/in/wesley-chen-15735b26/',
+			className: 'fa fa-linkedin'
+		},
+		{
+			name: 'github',
+			url: 'https://github.com/IdleScV',
+			className: 'fa fa-github'
+		},
+		{
+			name: 'instagram',
+			url: 'https://www.instagram.com/wesleydoesthings/',
+			className: 'fa fa-instagram'
+		},
+		{
+			name: 'email',
+			url: 'mailto:weschen1996@gmail.com',
+			className: 'fa fa-envelope'
+		}
+	],
+	aboutme:
+		'I am currently looking for Software Engineer opportunities in the DC metro area while building up my previous projects.',
+	address: 'Reston, VA',
+	website: 'weschen1996@gmail.com',
+	education: [
+		{
+			UniversityName: 'Flatiron School',
+			specialization: 'Immersive Software Engineer Boot Camp',
+			MonthOfPassing: 'May',
+			YearOfPassing: '2020',
+			Location: 'Washington, DC'
+		},
+		{
+			UniversityName: 'Montgomery College',
+			specialization: 'Associates in Business Managemen',
+			MonthOfPassing: 'Aug',
+			YearOfPassing: '2019',
+			Location: 'Rockville, MD'
+		},
+		{
+			UniversityName: 'International Culinary Center',
+			specialization: 'Professional Culinary Arts',
+			MonthOfPassing: 'March',
+			YearOfPassing: '2017',
+			Location: 'New York, NY'
+		}
+	],
+	// work: [
+	// 	{
+	// 		CompanyName: 'Some Company',
+	// 		specialization: 'Some specialization',
+	// 		MonthOfLeaving: 'Jan',
+	// 		YearOfLeaving: '2018',
+	// 		Achievements: 'Some Achievements'
+	// 	},
+	// 	{
+	// 		CompanyName: 'Some Company',
+	// 		specialization: 'Some specialization',
+	// 		MonthOfLeaving: 'Jan',
+	// 		YearOfLeaving: '2018',
+	// 		Achievements: 'Some Achievements'
+	// 	}
+	// ],
+	skillsTypes: [
+		{ type: 'Techinical Languages', names: [ 'HTML5', 'CSS', 'ReactJS' ] },
+		{ type: 'Development Tools', names: [ 'Express', 'Git', 'jQuery', 'Rails', 'React', 'Redux' ] },
+		{
+			type: 'Operating Systems',
+			names: [ ' Linux (Ubuntu)', 'OS X(Yosemite to Catalina)', 'Windows (XP, 7, 8, 10)' ]
+		}
+	],
+
+	portfolio: [
+		{
+			name: 'Path',
+			description: 'View and create the timelines of real or fictional people in detail or with a broader scope. ',
+			imgurl: 'images/portfolio/phone.jpg',
+			github: { front: 'https://github.com/IdleScV/mod5_frontend', back: 'https://github.com/IdleScV/mod5_backend' }
+		},
+		{
+			name: 'Draw-Off',
+			description:
+				'A fun and collaborative party game where up to 8 players are given interesting prompts to draw and rate.',
+			imgurl: 'images/portfolio/project.jpg',
+			github: { front: 'https://github.com/IdleScV/mod4_frontend', back: 'https://github.com/IdleScV/mod4_backend' }
+		},
+		{
+			name: 'Code Wars',
+			description: 'A coding challenge game where players compete 1 on 1 to see who solves the algorithm first.',
+			imgurl: 'images/portfolio/project2.png',
+			github: { front: 'https://github.com/IdleScV/MOD-3-Project', back: 'https://github.com/bumbot/mod3project' }
+		},
+		{
+			name: 'Zombo',
+			description:
+				'A CLI based Zombie survival game that uses a variety of minigames for the player to defeat zombies.',
+			imgurl: Zombo,
+			github: { front: 'https://github.com/IdleScV/ZOMBO' }
+		}
+	],
+	testimonials: [
+		{
+			description: 'This is a sample testimonial',
+			name: 'Some technical guy'
+		},
+		{
+			description: 'This is a sample testimonial',
+			name: 'Some technical guy'
+		}
+	]
+};
+
+export default resumeData;
