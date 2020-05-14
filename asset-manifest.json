@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/my_portfolio/static/js/main.fdd1f820.chunk.js",
-    "main.js.map": "/my_portfolio/static/js/main.fdd1f820.chunk.js.map",
-    "runtime-main.js": "/my_portfolio/static/js/runtime-main.8e144cbb.js",
-    "runtime-main.js.map": "/my_portfolio/static/js/runtime-main.8e144cbb.js.map",
-    "static/js/2.05afd8ec.chunk.js": "/my_portfolio/static/js/2.05afd8ec.chunk.js",
-    "static/js/2.05afd8ec.chunk.js.map": "/my_portfolio/static/js/2.05afd8ec.chunk.js.map",
+    "main.css": "/my_portfolio/static/css/main.e8c24495.chunk.css",
+    "main.js": "/my_portfolio/static/js/main.8ccbf93a.chunk.js",
+    "main.js.map": "/my_portfolio/static/js/main.8ccbf93a.chunk.js.map",
+    "runtime-main.js": "/my_portfolio/static/js/runtime-main.1415027a.js",
+    "runtime-main.js.map": "/my_portfolio/static/js/runtime-main.1415027a.js.map",
+    "static/js/2.af65ceaf.chunk.js": "/my_portfolio/static/js/2.af65ceaf.chunk.js",
+    "static/js/2.af65ceaf.chunk.js.map": "/my_portfolio/static/js/2.af65ceaf.chunk.js.map",
     "index.html": "/my_portfolio/index.html",
-    "precache-manifest.c44ab1e30fa8d36a5fce18c09fd23ffb.js": "/my_portfolio/precache-manifest.c44ab1e30fa8d36a5fce18c09fd23ffb.js",
+    "precache-manifest.c3e58e63260044296655ebf7d7c109dd.js": "/my_portfolio/precache-manifest.c3e58e63260044296655ebf7d7c109dd.js",
     "service-worker.js": "/my_portfolio/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/my_portfolio/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.05afd8ec.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.05afd8ec.chunk.js.LICENSE.txt"
+    "static/css/main.e8c24495.chunk.css.map": "/my_portfolio/static/css/main.e8c24495.chunk.css.map",
+    "static/js/2.af65ceaf.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.af65ceaf.chunk.js.LICENSE.txt",
+    "static/media/profilepic.jpg": "/my_portfolio/static/media/profilepic.d43e8d97.jpg",
+    "static/media/zombo.PNG": "/my_portfolio/static/media/zombo.8b270850.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e144cbb.js",
-    "static/js/2.05afd8ec.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.fdd1f820.chunk.js"
+    "static/js/runtime-main.1415027a.js",
+    "static/js/2.af65ceaf.chunk.js",
+    "static/css/main.e8c24495.chunk.css",
+    "static/js/main.8ccbf93a.chunk.js"
   ]
 }
