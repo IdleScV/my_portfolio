@@ -1,16 +1,46 @@
 import React, { useState } from 'react';
-import Zombo from '../images/projects/zombo.PNG';
 
-function Portfolio({ resumeData }) {
+function Portfolio({ resumeData, currentPageSet }) {
 	const [ displayDetail, displayDetailSet ] = useState(false);
 	const [ selected, selectedSet ] = useState(null);
 
-	console.log(selected);
 	return (
-		<section id="portfolio">
+		<section
+			id="portfolio"
+			onMouseEnter={() => {
+				currentPageSet('Portfolio');
+			}}
+		>
+			<h1>Check Out Some of My Works.</h1>
+			{displayDetail ? (
+				<div id="portfolio-detail" className="selected">
+					<h3>{selected.name}</h3>
+					<img src={selected.imgurl} />
+					<p>{selected.description}</p>
+					{selected.github.back ? (
+						<div>
+							<a href={selected.github.front} target="_blank" rel="noopener noreferrer">
+								FrontEnd
+							</a>
+							<a href={selected.github.back} target="_blank" rel="noopener noreferrer">
+								BackEnd
+							</a>
+						</div>
+					) : (
+						<div>
+							<a href={selected.github.front} target="_blank" rel="noopener noreferrer">
+								Project
+							</a>
+						</div>
+					)}
+				</div>
+			) : (
+				<div id="portfolio-detail" className="not-selected">
+					This is the Carousel
+				</div>
+			)}
 			<div className="row">
 				<div className="twelve columns collapsed">
-					<h1>Check Out Some of My Works.</h1>
 					<div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
 						{resumeData.portfolio &&
 							resumeData.portfolio.map((item, i) => {
@@ -20,10 +50,10 @@ function Portfolio({ resumeData }) {
 										className="columns portfolio-item"
 										onClick={() => {
 											selectedSet(item);
+											displayDetailSet(true);
 										}}
 									>
 										<div className="item-wrap">
-											<img src={item.imgurl} className="item-img" />
 											<div className="overlay">
 												<div className="portfolio-item-meta">
 													<h5>{item.name}</h5>

@@ -346,6 +346,7 @@ ul#nav li.current a {
 	background: #ebeeee;
 	padding-top: 90px;
 	padding-bottom: 60px;
+	position: relative;
 }
 #portfolio h1 {
 	font: 15px/24px 'opensans-semibold', sans-serif;
@@ -368,8 +369,41 @@ ul#nav li.current a {
 }
 
 .portfolio-item {
-	border: solid red 2px;
+	max-height: 175px;
+	padding: 10px;
+	border-radius: 5px;
+	transition: .3s all ease-in-out;
+	font-size: small;
 }
+
+.portfolio-item:hover {
+	box-shadow: 0px 0px 10px background;
+	-moz-box-shadow: 0px 0px 10px background;
+	-webkit-box-shadow: 0px 0px 10px background;
+}
+
+#portfolio-detail {
+	min-width: 375px;
+	max-width: 80%;
+	height: 400px;
+	margin: auto;
+	border-radius: 15px;
+}
+
+#portfolio-detail.selected {
+	text-align: center;
+	border: solid black 5px;
+}
+
+#portfolio-detail.selected img {
+	height: 200px;
+	/* border: solid red 2px; */
+}
+
+#portfolio-detail.not-selected {
+	border: solid red 5px;
+}
+
 /* fadein/fadeout effect for modal popup
 /* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */

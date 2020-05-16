@@ -3,9 +3,8 @@ import Zombo from './images/projects/zombo.PNG';
 let resumeData = {
 	imagebaseurl: 'https://rbhatia46.github.io/',
 	name: 'Wesley Chen',
-	role: 'Frontend Developer',
-	roleDescription:
-		'Experienced in Ruby on Rails and JavaScript based programming with a background in project organization.',
+	role: 'Fullstack Developer',
+	roleDescription: 'Experienced in React & Rails based programming with a background in project organization.',
 	socialLinks: [
 		{
 			name: 'linkedin',
@@ -72,7 +71,7 @@ let resumeData = {
 	// 	}
 	// ],
 	skillsTypes: [
-		{ type: 'Techinical Languages', names: [ 'HTML5', 'CSS', 'ReactJS' ] },
+		{ type: 'Techinical Languages', names: [ 'CSS', 'HTML5', 'Javascript', 'Python', 'Ruby' ] },
 		{ type: 'Development Tools', names: [ 'Express', 'Git', 'jQuery', 'Rails', 'React', 'Redux' ] },
 		{
 			type: 'Operating Systems',
@@ -83,7 +82,8 @@ let resumeData = {
 	portfolio: [
 		{
 			name: 'Path',
-			description: 'View and create the timelines of real or fictional people in detail or with a broader scope. ',
+			description:
+				'View and create timelines for real or fictional people. Get to know what a person did and what they lived through. ',
 			imgurl: 'images/portfolio/phone.jpg',
 			github: { front: 'https://github.com/IdleScV/mod5_frontend', back: 'https://github.com/IdleScV/mod5_backend' }
 		},

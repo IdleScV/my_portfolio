@@ -1,9 +1,14 @@
 import React from 'react';
 import ProPic from '../images/profilepic.jpg';
 
-function About({ resumeData }) {
+function About({ resumeData, currentPageSet }) {
 	return (
-		<section id="about">
+		<section
+			id="about"
+			onMouseEnter={() => {
+				currentPageSet('About');
+			}}
+		>
 			<div className="row">
 				<div className="three columns">
 					<img className="profile-pic" src={ProPic} alt="" />

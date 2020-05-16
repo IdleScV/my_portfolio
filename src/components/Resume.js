@@ -1,8 +1,13 @@
 import React from 'react';
 
-function Resume({ resumeData }) {
+function Resume({ resumeData, currentPageSet }) {
 	return (
-		<section id="resume">
+		<section
+			id="resume"
+			onMouseEnter={() => {
+				currentPageSet('Resume');
+			}}
+		>
 			<div className="row education">
 				<div className="three columns header-col">
 					<h1>
@@ -12,9 +17,9 @@ function Resume({ resumeData }) {
 
 				<div className="nine columns main-col">
 					{resumeData.education &&
-						resumeData.education.map((item) => {
+						resumeData.education.map((item, i) => {
 							return (
-								<div className="row item">
+								<div className="row item" key={i}>
 									<div className="twelve columns">
 										<h3>{item.UniversityName}</h3>
 										<p className="info">
@@ -41,9 +46,9 @@ function Resume({ resumeData }) {
 
 					<div className="nine columns main-col">
 						{resumeData.work &&
-							resumeData.work.map((item) => {
+							resumeData.work.map((item, i) => {
 								return (
-									<div className="row item">
+									<div className="row item" key={i}>
 										<div className="twelve columns">
 											<h3>{item.CompanyName}</h3>
 											<p className="info">
@@ -69,13 +74,13 @@ function Resume({ resumeData }) {
 				</div>
 
 				<div className="nine columns main-col">
-					{resumeData.skillsTypes.map((skill) => (
-						<div className="skill-type">
+					{resumeData.skillsTypes.map((skill, i) => (
+						<div className="skill-type" key={i}>
 							<p>{skill.type}</p>
 							<div className="bars">
 								<ul className="skills">
-									{skill.names.map((item) => {
-										return <li>{item}</li>;
+									{skill.names.map((item, i) => {
+										return <li key={i}>{item}</li>;
 									})}
 								</ul>
 							</div>
