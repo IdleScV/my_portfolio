@@ -7,22 +7,25 @@ function Header({ resumeData, currentPageSet, currentPage }) {
 			<header id="home">
 				<nav id="nav-wrap">
 					<ul id="nav" className="nav">
-						<li className={currentPage === 'Home' ? 'current' : null}>
+						<li className={currentPage === 'Home' ? 'current' : null} onClick={() => currentPageSet('Home')}>
 							<AnchorLink className="smoothscroll" href="#home">
 								Home
 							</AnchorLink>
 						</li>
-						<li className={currentPage === 'About' ? 'current' : null}>
+						<li className={currentPage === 'About' ? 'current' : null} onClick={() => currentPageSet('About')}>
 							<AnchorLink className="smoothscroll" href="#about">
 								About
 							</AnchorLink>
 						</li>
-						<li className={currentPage === 'Resume' ? 'current' : null}>
+						<li className={currentPage === 'Resume' ? 'current' : null} onClick={() => currentPageSet('Resume')}>
 							<AnchorLink className="smoothscroll" href="#resume">
 								Resume
 							</AnchorLink>
 						</li>
-						<li className={currentPage === 'Portfolio' ? 'current' : null}>
+						<li
+							className={currentPage === 'Portfolio' ? 'current' : null}
+							onClick={() => currentPageSet('Portfolio')}
+						>
 							<AnchorLink className="smoothscroll" href="#portfolio">
 								Works
 							</AnchorLink>
