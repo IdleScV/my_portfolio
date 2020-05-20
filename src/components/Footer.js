@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 function Footer({ resumeData, currentPageSet }) {
 	return (

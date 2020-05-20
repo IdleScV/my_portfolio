@@ -28,7 +28,7 @@ let resumeData = {
 		}
 	],
 	aboutme:
-		'I am currently looking for Software Engineer opportunities in the DC metro area while building up my previous projects.',
+		'I am currently looking for Software Engineer opportunities in the DC metro area while expanding my project base.',
 	address: 'Reston, VA',
 	website: 'weschen1996@gmail.com',
 	education: [
@@ -41,7 +41,7 @@ let resumeData = {
 		},
 		{
 			UniversityName: 'Montgomery College',
-			specialization: 'Associates in Business Managemen',
+			specialization: 'Associates in Business Management',
 			MonthOfPassing: 'Aug',
 			YearOfPassing: '2019',
 			Location: 'Rockville, MD'

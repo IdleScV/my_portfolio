@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
 function Portfolio({ resumeData, currentPageSet }) {
-	const [ displayDetail, displayDetailSet ] = useState(false);
-	const [ selected, selectedSet ] = useState(null);
-
 	return (
 		<section
 			id="portfolio"
@@ -12,58 +11,30 @@ function Portfolio({ resumeData, currentPageSet }) {
 			}}
 		>
 			<h1>Check Out Some of My Works.</h1>
-			{displayDetail ? (
-				<div id="portfolio-detail" className="selected">
-					<h3>{selected.name}</h3>
-					<img src={selected.imgurl} />
-					<p>{selected.description}</p>
-					{selected.github.back ? (
-						<div>
-							<a href={selected.github.front} target="_blank" rel="noopener noreferrer">
-								FrontEnd
-							</a>
-							<a href={selected.github.back} target="_blank" rel="noopener noreferrer">
-								BackEnd
-							</a>
-						</div>
-					) : (
-						<div>
-							<a href={selected.github.front} target="_blank" rel="noopener noreferrer">
-								Project
-							</a>
-						</div>
-					)}
-				</div>
-			) : (
-				<div id="portfolio-detail" className="not-selected">
-					This is the Carousel
-				</div>
-			)}
+
 			<div className="row">
 				<div className="twelve columns collapsed">
 					<div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-						{resumeData.portfolio &&
-							resumeData.portfolio.map((item, i) => {
-								return (
-									<div
-										key={i}
-										className="columns portfolio-item"
-										onClick={() => {
-											selectedSet(item);
-											displayDetailSet(true);
-										}}
-									>
-										<div className="item-wrap">
-											<div className="overlay">
-												<div className="portfolio-item-meta">
-													<h5>{item.name}</h5>
+						<Carousel className="carousel">
+							{resumeData.portfolio &&
+								resumeData.portfolio.map((item, i) => {
+									return (
+										<div key={i} className="moving-item">
+											<h2>{item.name}</h2>
+											<div>
+												<div className="description">
 													<p>{item.description}</p>
+													<p>
+														<i className="fa fa-github" /> <a>FRONT</a> <a>BACK</a>
+													</p>
+													<a>DEMO WEBSITE</a>
 												</div>
+												<img id="youtube-video" src={item.imgurl} alt="words" />
 											</div>
 										</div>
-									</div>
-								);
-							})}
+									);
+								})}
+						</Carousel>
 					</div>
 				</div>
 			</div>
