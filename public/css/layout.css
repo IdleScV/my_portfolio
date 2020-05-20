@@ -397,10 +397,24 @@ ul#nav li.current a {
 	flex-direction: column;
 	justify-content: space-evenly;
 }
+.demositelink {
+	/* border: red solid 2px; */
+
+	text-decoration: underline;
+	margin-top: -20px;
+}
+
+.githublink {
+	text-decoration: underline;
+}
+
+.description .details {
+	/* border: red solid 2px; */
+	display: flex;
+	justify-content: space-evenly;
+}
 
 #youtube-video {
-	/* border: red solid 2px; */
-	width: 110%;
 	margin-left: 5px;
 }
 
@@ -411,6 +425,7 @@ ul#nav li.current a {
 	#youtube-video {
 		/* border: red solid 2px; */
 		width: 110%;
+
 		margin-top: 10px;
 	}
 }
@@ -420,9 +435,6 @@ ul#nav li.current a {
 	padding: 10px;
 	font-size: xx-large;
 	/* border: red solid 2px; */
-}
-
-.carousel img {
 }
 
 .carousel > .thumbs-wrapper {

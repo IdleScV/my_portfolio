@@ -1,6 +1,7 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import ReactPlayer from 'react-player';
 
 function Portfolio({ resumeData, currentPageSet }) {
 	return (
@@ -10,7 +11,7 @@ function Portfolio({ resumeData, currentPageSet }) {
 				currentPageSet('Portfolio');
 			}}
 		>
-			<h1>Check Out Some of My Works.</h1>
+			<h1>Check Out Some of My Previous Projects</h1>
 
 			<div className="row">
 				<div className="twelve columns collapsed">
@@ -24,12 +25,28 @@ function Portfolio({ resumeData, currentPageSet }) {
 											<div>
 												<div className="description">
 													<p>{item.description}</p>
+													{item.demourl ? (
+														<a href={item.demourl} alt="demo-link" className="demositelink ">
+															Working Demo Site
+														</a>
+													) : null}
 													<p>
-														<i className="fa fa-github" /> <a>FRONT</a> <a>BACK</a>
+														<h4>
+															Want to look at the code? <i className="fa fa-github" />{' '}
+														</h4>
+
+														<div className="details">
+															{item.github.map((x) => {
+																return (
+																	<a href={x.url} alt={x.type} className="githublink">
+																		{x.type}
+																	</a>
+																);
+															})}
+														</div>
 													</p>
-													<a>DEMO WEBSITE</a>
 												</div>
-												<img id="youtube-video" src={item.imgurl} alt="words" />
+												<ReactPlayer controls width="100%" id="youtube-video" url={item.youtubedemo} />
 											</div>
 										</div>
 									);

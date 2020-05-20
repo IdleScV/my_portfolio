@@ -85,27 +85,42 @@ let resumeData = {
 			description:
 				'View and create timelines for real or fictional people. Get to know what a person did and what they lived through. ',
 			imgurl: 'images/portfolio/phone.jpg',
-			github: { front: 'https://github.com/IdleScV/mod5_frontend', back: 'https://github.com/IdleScV/mod5_backend' }
+			github: [
+				{ type: 'React Front End', url: 'https://github.com/IdleScV/mod5_frontend' },
+				{ type: 'Rails Back End', url: 'https://github.com/IdleScV/mod5_backend' }
+			],
+			demourl: 'https://idlescv.github.io/Path_frontend/',
+			youtubedemo: 'https://www.youtube.com/watch?v=C0DPdy98e4c'
 		},
 		{
 			name: 'Draw-Off',
 			description:
 				'A fun and collaborative party game where up to 8 players are given interesting prompts to draw and rate.',
 			imgurl: 'images/portfolio/project.jpg',
-			github: { front: 'https://github.com/IdleScV/mod4_frontend', back: 'https://github.com/IdleScV/mod4_backend' }
+			github: [
+				{ type: 'React Front End', url: 'https://github.com/IdleScV/mod4_frontend' },
+				{ type: 'Rails Back End', url: 'https://github.com/IdleScV/mod4_backend' }
+			],
+			demourl: 'https://draw-off-app.herokuapp.com/',
+			youtubedemo: 'https://www.youtube.com/watch?v=C0DPdy98e4c'
 		},
 		{
 			name: 'Code Wars',
 			description: 'A coding challenge game where players compete 1 on 1 to see who solves the algorithm first.',
 			imgurl: 'images/portfolio/project2.png',
-			github: { front: 'https://github.com/IdleScV/MOD-3-Project', back: 'https://github.com/bumbot/mod3project' }
+			github: [
+				{ type: 'Vanilla JS Front End', url: 'https://github.com/IdleScV/MOD-3-Project' },
+				{ type: 'Rails Back End', url: 'https://github.com/bumbot/mod3project' }
+			],
+			youtubedemo: 'https://www.youtube.com/watch?v=C0DPdy98e4c'
 		},
 		{
 			name: 'Zombo',
 			description:
 				'A CLI based Zombie survival game that uses a variety of minigames for the player to defeat zombies.',
 			imgurl: Zombo,
-			github: { front: 'https://github.com/IdleScV/ZOMBO' }
+			github: [ { type: 'Ruby', url: 'https://github.com/IdleScV/ZOMBO' } ],
+			youtubedemo: 'https://www.youtube.com/watch?v=C0DPdy98e4c'
 		}
 	],
 	testimonials: [
