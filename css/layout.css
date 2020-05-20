@@ -142,6 +142,8 @@ header .scrolldown a:hover {
 
 /* nav-wrap */
 #nav-wrap {
+	background-color: rgba(128, 128, 128, 0.335);
+	width: auto;
 	font: 12px 'opensans-bold', sans-serif;
 	width: 100%;
 	text-transform: uppercase;
@@ -357,29 +359,75 @@ ul#nav li.current a {
 	color: #95a3a3;
 }
 
-#portfolio-wrapper {
-	/* border: solid 2px red; */
-	/* display: flex; */
-	/* justify-content: space-evenly; */
-}
-
-#portfolio-wrapper .columns {
-	/* border: solid 2px red; */
-	margin: 0px 0px;
-}
-
 .portfolio-item {
+	/* border: red 2px solid; */
 	max-height: 175px;
-	padding: 10px;
+	/* padding: 10px; */
 	border-radius: 5px;
 	transition: .3s all ease-in-out;
 	font-size: small;
 }
 
-.portfolio-item:hover {
-	box-shadow: 0px 0px 10px background;
-	-moz-box-shadow: 0px 0px 10px background;
-	-webkit-box-shadow: 0px 0px 10px background;
+.carousel > div:first-of-type > div {
+	/* border: red 2px solid; */
+	border-radius: 10px;
+}
+
+.moving-item {
+	/* border: solid red 10px; */
+	display: flex;
+	flex-direction: column;
+}
+
+.moving-item h2 {
+	margin-top: 10px;
+	/* border: solid red 10px; */
+}
+
+.moving-item > div {
+	padding: 10px 20px;
+	/* border: solid red 10px; */
+	display: flex;
+	margin: 0px 10px 40px 10px;
+}
+
+.moving-item .description {
+	/* border: red solid 2px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#youtube-video {
+	/* border: red solid 2px; */
+	width: 110%;
+	margin-left: 5px;
+}
+
+@media only screen and (max-width: 780px) {
+	.moving-item > div {
+		flex-direction: column;
+	}
+	#youtube-video {
+		/* border: red solid 2px; */
+		width: 110%;
+		margin-top: 10px;
+	}
+}
+
+.carousel h2 {
+	color: rgb(200, 200, 200);
+	padding: 10px;
+	font-size: xx-large;
+	/* border: red solid 2px; */
+}
+
+.carousel img {
+}
+
+.carousel > .thumbs-wrapper {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 #portfolio-detail {
@@ -393,15 +441,6 @@ ul#nav li.current a {
 #portfolio-detail.selected {
 	text-align: center;
 	border: solid black 5px;
-}
-
-#portfolio-detail.selected img {
-	height: 200px;
-	/* border: solid red 2px; */
-}
-
-#portfolio-detail.not-selected {
-	border: solid red 5px;
 }
 
 /* fadein/fadeout effect for modal popup
