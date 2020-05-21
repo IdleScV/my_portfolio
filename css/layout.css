@@ -430,6 +430,10 @@ ul#nav li.current a {
 	}
 }
 
+p.carousel-status {
+	display: none;
+}
+
 .carousel h2 {
 	color: rgb(200, 200, 200);
 	padding: 10px;
