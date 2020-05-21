@@ -76,7 +76,7 @@ let resumeData = {
 	// 	}
 	// ],
 	skillsTypes: [
-		{ type: 'Techinical Languages', names: [ 'CSS', 'HTML5', 'Javascript', 'Python', 'Ruby' ] },
+		{ type: 'Techinical Languages', names: [ 'CSS', 'HTML5', 'Javascript', 'JSON', 'Python', 'Ruby', 'SQL' ] },
 		{ type: 'Development Tools', names: [ 'Express', 'Git', 'jQuery', 'Rails', 'React', 'Redux' ] },
 		{
 			type: 'Operating Systems',
