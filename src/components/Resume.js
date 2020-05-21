@@ -88,6 +88,11 @@ function Resume({ resumeData, currentPageSet }) {
 					))}
 				</div>
 			</div>
+			<div className="resume-download">
+				<a href="../WesleyChenResume5_21.pdf" download>
+					Click to Download Resume
+				</a>
+			</div>
 		</section>
 	);
 }
