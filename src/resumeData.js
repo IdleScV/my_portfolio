@@ -1,4 +1,5 @@
 import Zombo from './images/projects/zombo.PNG';
+import PDFfile from './files/5_18WChenResume.pdf';
 
 let resumeData = {
 	imagebaseurl: 'https://rbhatia46.github.io/',
