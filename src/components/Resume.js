@@ -89,10 +89,9 @@ function Resume({ resumeData, currentPageSet }) {
 				</div>
 			</div>
 			<div className="resume-download">
-				<a href="../WesleyChenResume5_21.pdf" target="_blank" rel="noopener noreferrer" download>
+				<a href={resumeData.resumeUrl} target="_blank" rel="noopener noreferrer">
 					<button>
-						<i className="fa fa-download" />
-						Resume
+						| <i className="fa fa-download" /> Detailed Resume |
 					</button>
 				</a>
 			</div>

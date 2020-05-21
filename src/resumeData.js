@@ -137,7 +137,8 @@ let resumeData = {
 			description: 'This is a sample testimonial',
 			name: 'Some technical guy'
 		}
-	]
+	],
+	resumeUrl: 'https://docdro.id/kyUUfFv'
 };
 
 export default resumeData;
