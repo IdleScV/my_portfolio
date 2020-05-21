@@ -238,6 +238,14 @@ ul#nav li.current a {
 	height: 220px;
 	border-radius: 3%;
 }
+
+@media only screen and (max-width: 780px) {
+	#about .three.columns {
+		/* border: 2px red solid; */
+		text-align: center;
+	}
+}
+
 #about .contact-details {
 	width: 41.66667%;
 }
@@ -340,6 +348,11 @@ ul#nav li.current a {
 	margin-right: 50px;
 }
 
+.resume-download {
+	/* border: red solid 2px; */
+	margin-top: 40px;
+	text-align: center;
+}
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
