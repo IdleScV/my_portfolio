@@ -22,6 +22,11 @@ let resumeData = {
 			className: 'fa fa-instagram'
 		},
 		{
+			name: 'medium',
+			url: 'https://medium.com/@weschen1996',
+			className: 'fa fa-medium'
+		},
+		{
 			name: 'email',
 			url: 'mailto:weschen1996@gmail.com',
 			className: 'fa fa-envelope'

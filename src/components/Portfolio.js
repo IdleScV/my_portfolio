@@ -26,27 +26,46 @@ function Portfolio({ resumeData, currentPageSet }) {
 												<div className="description">
 													<p>{item.description}</p>
 													{item.demourl ? (
-														<a href={item.demourl} alt="demo-link" className="demositelink ">
+														<a
+															href={item.demourl}
+															alt="demo-link"
+															className="demositelink "
+															target="_blank"
+															rel="noopener noreferrer"
+														>
 															Working Demo Site
 														</a>
 													) : null}
-													<p>
+													<div>
 														<h4>
-															Want to look at the code? <i className="fa fa-github" />{' '}
+															Want to look at the code? <i className="fa fa-github" />
 														</h4>
 
 														<div className="details">
-															{item.github.map((x) => {
+															{item.github.map((x, i) => {
 																return (
-																	<a href={x.url} alt={x.type} className="githublink">
+																	<a
+																		key={i}
+																		href={x.url}
+																		alt={x.type}
+																		className="githublink"
+																		target="_blank"
+																		rel="noopener noreferrer"
+																	>
 																		{x.type}
 																	</a>
 																);
 															})}
 														</div>
-													</p>
+													</div>
 												</div>
-												<ReactPlayer controls width="100%" id="youtube-video" url={item.youtubedemo} />
+												<ReactPlayer
+													controls
+													width="100%"
+													id="youtube-video"
+													url={item.youtubedemo}
+													rel="noopener noreferrer"
+												/>
 											</div>
 										</div>
 									);
