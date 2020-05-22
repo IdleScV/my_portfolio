@@ -11,7 +11,7 @@ function Footer({ resumeData, currentPageSet }) {
 							resumeData.socialLinks.map((item, i) => {
 								return (
 									<li key={i}>
-										<a href={item.url}>
+										<a href={item.url} target="_blank" rel="noopener noreferrer">
 											<i className={item.className} />
 										</a>
 									</li>
