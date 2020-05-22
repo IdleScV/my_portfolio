@@ -138,7 +138,7 @@ let resumeData = {
 			name: 'Some technical guy'
 		}
 	],
-	resumeUrl: 'https://docdro.id/kyUUfFv'
+	resumeUrl: 'https://docdro.id/t0rryuB'
 };
 
 export default resumeData;
