@@ -76,8 +76,11 @@ let resumeData = {
 	// 	}
 	// ],
 	skillsTypes: [
-		{ type: 'Techinical Languages', names: [ 'CSS', 'HTML5', 'Javascript', 'JSON', 'Python', 'Ruby', 'SQL' ] },
-		{ type: 'Development Tools', names: [ 'Express', 'Git', 'jQuery', 'Rails', 'React', 'Redux' ] },
+		{
+			type: 'Techinical Languages',
+			names: [ 'CSS', 'HTML5', 'Javascript', 'JSON', 'Python', 'Ruby', 'SQL' ]
+		},
+		{ type: 'Development Tools', names: [ 'Express', 'Firebase', 'Git', 'jQuery', 'Rails', 'React', 'Redux' ] },
 		{
 			type: 'Operating Systems',
 			names: [ ' Linux (Ubuntu)', 'OS X(Yosemite to Catalina)', 'Windows (XP, 7, 8, 10)' ]
@@ -138,7 +141,7 @@ let resumeData = {
 			name: 'Some technical guy'
 		}
 	],
-	resumeUrl: 'https://docdro.id/t0rryuB'
+	resumeUrl: 'https://docdro.id/cHOuyCu'
 };
 
 export default resumeData;
