@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { useInView } from 'react-intersection-observer';
+
+const THRESHOLD = [ 0.7 ];
 
 function Header({ resumeData, currentPageSet, currentPage }) {
+	const [ ref, inView ] = useInView({ threshold: THRESHOLD });
+	useEffect(
+		() => {
+			if (inView) {
+				currentPageSet('Home');
+			}
+		},
+		[ inView, currentPageSet ]
+	);
+
 	return (
 		<React.Fragment>
-			<header id="home">
+			<header id="home" ref={ref}>
 				<nav id="nav-wrap">
 					<ul id="nav" className="nav">
 						<li className={currentPage === 'Home' ? 'current' : null} onClick={() => currentPageSet('Home')}>
@@ -33,12 +46,7 @@ function Header({ resumeData, currentPageSet, currentPage }) {
 					</ul>
 				</nav>
 
-				<div
-					className="row banner"
-					onMouseEnter={() => {
-						currentPageSet('Home');
-					}}
-				>
+				<div className="row banner">
 					<div className="banner-text">
 						<h1 className="responsive-headline">{resumeData.name}</h1>
 						<h3 style={{ color: '#fff', fontFamily: 'sans-serif ' }}>

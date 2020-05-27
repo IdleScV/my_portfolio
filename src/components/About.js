@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 import ProPic from '../images/profilepic.jpg';
 
+const THRESHOLD = [ 0.75 ];
+
 function About({ resumeData, currentPageSet }) {
-	return (
-		<section
-			id="about"
-			onMouseEnter={() => {
+	const [ ref, inView ] = useInView({ threshold: THRESHOLD });
+
+	useEffect(
+		() => {
+			if (inView) {
 				currentPageSet('About');
-			}}
-		>
+			}
+		},
+		[ inView, currentPageSet ]
+	);
+
+	return (
+		<section ref={ref} id="about">
 			<div className="row">
 				<div className="three columns">
 					<img className="profile-pic" src={ProPic} alt="" />

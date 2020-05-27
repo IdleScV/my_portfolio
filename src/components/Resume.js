@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+
+const THRESHOLD = [ 0.5 ];
 
 function Resume({ resumeData, currentPageSet }) {
-	return (
-		<section
-			id="resume"
-			onMouseEnter={() => {
+	const [ ref, inView ] = useInView({ threshold: THRESHOLD });
+
+	useEffect(
+		() => {
+			if (inView) {
 				currentPageSet('Resume');
-			}}
-		>
+			}
+		},
+		[ inView, currentPageSet ]
+	);
+
+	return (
+		<section id="resume" ref={ref}>
 			<div className="row education">
 				<div className="three columns header-col">
 					<h1>

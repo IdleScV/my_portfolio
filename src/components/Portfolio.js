@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import { useInView } from 'react-intersection-observer';
 import ReactPlayer from 'react-player';
 
+const THRESHOLD = [ 0.75 ];
 function Portfolio({ resumeData, currentPageSet }) {
-	return (
-		<section
-			id="portfolio"
-			onMouseEnter={() => {
+	const [ ref, inView ] = useInView({ threshold: THRESHOLD });
+
+	useEffect(
+		() => {
+			if (inView) {
 				currentPageSet('Portfolio');
-			}}
-		>
+			}
+		},
+		[ inView, currentPageSet ]
+	);
+	return (
+		<section id="portfolio" ref={ref}>
 			<h1>Check Out Some of My Previous Projects</h1>
 
 			<div className="row">
