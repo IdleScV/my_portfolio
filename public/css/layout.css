@@ -392,6 +392,8 @@ ul#nav li.current a {
 
 .portfolio-wrapper {
 	display: flex;
+	padding: 5px;
+	border: solid black 2px;
 }
 
 .moving-item {

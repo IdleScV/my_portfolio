@@ -110,7 +110,7 @@ let resumeData = {
 				{ type: 'Rails Back End', url: 'https://github.com/IdleScV/mod4_backend' }
 			],
 			demourl: 'https://draw-off-app.herokuapp.com/',
-			youtubedemo: 'https://www.youtube.com/watch?v=C0DPdy98e4c'
+			youtubedemo: 'https://youtu.be/4vn4oCgs-wc'
 		},
 		{
 			name: 'Code Wars',
