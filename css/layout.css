@@ -390,22 +390,68 @@ ul#nav li.current a {
 	color: #818a8a;
 }
 
-.portfolio-wrapper {
+#portfolio-wrapper {
+	/* border: solid black 2px; */
 	display: flex;
-	padding: 5px;
-	border: solid black 2px;
+	justify-content: space-evenly;
+	margin: auto;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .moving-item {
-	border: solid red 2px;
-	width: 700px;
+	margin: 5px;
+	background-color: rgb(241, 240, 241);
+	/* border: solid red 2px; */
+	padding: 5px;
+	border-radius: 5px;
+	width: 400px;
+
 	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
+.moving-item .description {
+	/* border: solid blue 2px; */
+	width: 100%;
+
+	text-align: center;
+}
+
+.project-snippet {
+	/* border: solid red 2px; */
+	margin-bottom: 0px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.moving-item .description .github {
+	display: flex;
+	justify-content: space-evenly;
+	/* border: solid red 2px; */
+}
+
+.moving-item .description .github .title {
+	/* border: solid red 2px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.moving-item .description .github .details {
+	/* border: solid red 2px; */
+	display: flex;
+	flex-direction: column;
+}
+
+.moving-item .description .github .githublink {
+	/* border: solid red 2px; */
+}
+.moving-item .demo-video {
+	width: 100%;
+}
 @media only screen and (max-width: 780px) {
-	.portfolio-wrapper {
-		flex-direction: column;
-	}
 }
 
 /* fadein/fadeout effect for modal popup
