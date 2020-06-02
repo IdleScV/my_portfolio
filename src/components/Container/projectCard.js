@@ -20,10 +20,10 @@ function ProjectCard({ item, i }) {
 				) : null}
 
 				<div className="github">
-					<div className="title">
-						Want to look at the code? <i className="fa fa-github" />
-					</div>
 					<div className="details">
+						<br />
+
+						<i className="fa fa-github"> Code : </i>
 						{item.github.map((x, i) => {
 							return (
 								<a
@@ -42,14 +42,18 @@ function ProjectCard({ item, i }) {
 				</div>
 			</div>
 			<div className="demo-video">
-				<ReactPlayer
-					controls
-					width="100%"
-					height="220px"
-					id="youtube-video"
-					url={item.youtubedemo}
-					rel="noopener noreferrer"
-				/>
+				{item.youtubedemo ? (
+					<ReactPlayer
+						controls
+						width="100%"
+						height="220px"
+						id="youtube-video"
+						url={item.youtubedemo}
+						rel="noopener noreferrer"
+					/>
+				) : (
+					<div className="comingsoon">Demo Video Coming Soon</div>
+				)}
 			</div>
 		</div>
 	);

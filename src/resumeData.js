@@ -97,8 +97,7 @@ let resumeData = {
 				{ type: 'React Front End', url: 'https://github.com/IdleScV/mod5_frontend' },
 				{ type: 'Rails Back End', url: 'https://github.com/IdleScV/mod5_backend' }
 			],
-			demourl: 'https://idlescv.github.io/Path_frontend/',
-			youtubedemo: 'https://www.youtube.com/watch?v=C0DPdy98e4c'
+			demourl: 'https://idlescv.github.io/Path_frontend/'
 		},
 		{
 			name: 'Draw-Off',
@@ -119,16 +118,14 @@ let resumeData = {
 			github: [
 				{ type: 'Vanilla JS Front End', url: 'https://github.com/IdleScV/MOD-3-Project' },
 				{ type: 'Rails Back End', url: 'https://github.com/bumbot/mod3project' }
-			],
-			youtubedemo: 'https://www.youtube.com/watch?v=C0DPdy98e4c'
+			]
 		},
 		{
 			name: 'Zombo',
 			description:
 				'A CLI based Zombie survival game that uses a variety of minigames for the player to defeat zombies.',
 			imgurl: Zombo,
-			github: [ { type: 'Ruby', url: 'https://github.com/IdleScV/ZOMBO' } ],
-			youtubedemo: 'https://www.youtube.com/watch?v=C0DPdy98e4c'
+			github: [ { type: 'Ruby', url: 'https://github.com/IdleScV/ZOMBO' } ]
 		}
 	],
 	testimonials: [
