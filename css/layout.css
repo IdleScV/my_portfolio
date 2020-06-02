@@ -320,12 +320,14 @@ ul#nav li.current a {
 }
 #resume .main-col {
 	padding-right: 10%;
+
+	margin-bottom: -25px;
 }
 
 .education,
 .work {
 	margin-bottom: 48px;
-	padding-bottom: 24px;
+	padding-bottom: 5px;
 	border-bottom: 1px solid #e8e8e8;
 }
 #resume .info {
@@ -374,7 +376,7 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-	background: #ebeeee;
+	background: #dfdfdf;
 	padding-top: 90px;
 	padding-bottom: 60px;
 	position: relative;
@@ -385,107 +387,25 @@ ul#nav li.current a {
 	letter-spacing: 1px;
 	text-align: center;
 	margin-bottom: 48px;
-	color: #95a3a3;
+	color: #818a8a;
 }
 
-.portfolio-item {
-	/* border: red 2px solid; */
-	max-height: 175px;
-	/* padding: 10px; */
-	border-radius: 5px;
-	transition: .3s all ease-in-out;
-	font-size: small;
-}
-
-.carousel > div:first-of-type > div {
-	/* border: red 2px solid; */
-	border-radius: 10px;
+.portfolio-wrapper {
+	display: flex;
+	padding: 5px;
+	border: solid black 2px;
 }
 
 .moving-item {
-	/* border: solid red 10px; */
+	border: solid red 2px;
+	width: 700px;
 	display: flex;
-	flex-direction: column;
-}
-
-.moving-item h2 {
-	margin-top: 10px;
-	/* border: solid red 10px; */
-}
-
-.moving-item > div {
-	padding: 10px 20px;
-	/* border: solid red 10px; */
-	display: flex;
-	margin: 0px 10px 40px 10px;
-}
-
-.moving-item .description {
-	/* border: red solid 2px; */
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
-.demositelink {
-	/* border: red solid 2px; */
-
-	text-decoration: underline;
-	margin-top: -20px;
-}
-
-.githublink {
-	text-decoration: underline;
-}
-
-.description .details {
-	/* border: red solid 2px; */
-	display: flex;
-	justify-content: space-evenly;
-}
-
-#youtube-video {
-	margin-left: 5px;
 }
 
 @media only screen and (max-width: 780px) {
-	.moving-item > div {
+	.portfolio-wrapper {
 		flex-direction: column;
 	}
-	#youtube-video {
-		/* border: red solid 2px; */
-		width: 110%;
-
-		margin-top: 10px;
-	}
-}
-
-p.carousel-status {
-	display: none;
-}
-
-.carousel h2 {
-	color: rgb(200, 200, 200);
-	padding: 10px;
-	font-size: xx-large;
-	/* border: red solid 2px; */
-}
-
-.carousel > .thumbs-wrapper {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-#portfolio-detail {
-	min-width: 375px;
-	max-width: 80%;
-	height: 400px;
-	margin: auto;
-	border-radius: 15px;
-}
-
-#portfolio-detail.selected {
-	text-align: center;
-	border: solid black 5px;
 }
 
 /* fadein/fadeout effect for modal popup
