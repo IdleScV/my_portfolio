@@ -6,7 +6,7 @@ function ProjectCard({ item, i }) {
 		<div key={i} className="moving-item">
 			<div className="description">
 				<h2>{item.name}</h2>
-				<p>{item.description}</p>
+				<p className="project-snippet">{item.description}</p>
 				{item.demourl ? (
 					<a
 						href={item.demourl}
@@ -18,11 +18,11 @@ function ProjectCard({ item, i }) {
 						Working Demo Site
 					</a>
 				) : null}
-				<div>
-					<h4>
-						Want to look at the code? <i className="fa fa-github" />
-					</h4>
 
+				<div className="github">
+					<div className="title">
+						Want to look at the code? <i className="fa fa-github" />
+					</div>
 					<div className="details">
 						{item.github.map((x, i) => {
 							return (
@@ -42,7 +42,14 @@ function ProjectCard({ item, i }) {
 				</div>
 			</div>
 			<div className="demo-video">
-				<ReactPlayer controls width="100%" id="youtube-video" url={item.youtubedemo} rel="noopener noreferrer" />
+				<ReactPlayer
+					controls
+					width="100%"
+					height="220px"
+					id="youtube-video"
+					url={item.youtubedemo}
+					rel="noopener noreferrer"
+				/>
 			</div>
 		</div>
 	);
