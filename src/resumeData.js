@@ -112,13 +112,14 @@ let resumeData = {
 			youtubedemo: 'https://youtu.be/4vn4oCgs-wc'
 		},
 		{
-			name: 'Code Wars',
+			name: 'Battle-Code',
 			description: 'A coding challenge game where players compete 1 on 1 to see who solves the algorithm first.',
 			imgurl: 'images/portfolio/project2.png',
 			github: [
 				{ type: 'Vanilla JS Front End', url: 'https://github.com/IdleScV/MOD-3-Project' },
 				{ type: 'Rails Back End', url: 'https://github.com/bumbot/mod3project' }
-			]
+			],
+			youtubedemo: 'https://youtu.be/j96bmqo8Jns'
 		},
 		{
 			name: 'Zombo',
