@@ -97,7 +97,8 @@ let resumeData = {
 				{ type: 'React Front End', url: 'https://github.com/IdleScV/mod5_frontend' },
 				{ type: 'Rails Back End', url: 'https://github.com/IdleScV/mod5_backend' }
 			],
-			demourl: 'https://idlescv.github.io/Path_frontend/'
+			demourl: 'https://idlescv.github.io/Path_frontend/',
+			youtubedemo: 'https://youtu.be/YD6uRh0HR6E'
 		},
 		{
 			name: 'Draw-Off',
