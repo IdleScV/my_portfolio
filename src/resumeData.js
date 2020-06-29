@@ -1,5 +1,3 @@
-import Zombo from './images/projects/zombo.PNG';
-
 let resumeData = {
 	imagebaseurl: 'https://rbhatia46.github.io/',
 	name: 'Wesley Chen',
@@ -123,23 +121,16 @@ let resumeData = {
 			youtubedemo: 'https://youtu.be/j96bmqo8Jns'
 		},
 		{
-			name: 'Zombo',
+			name: 'Covid-Tracer',
 			description:
-				'A CLI based Zombie survival game that uses a variety of minigames for the player to defeat zombies.',
-			imgurl: Zombo,
-			github: [ { type: 'Ruby', url: 'https://github.com/IdleScV/ZOMBO' } ]
+				'Covid-19 data visualization with predictions using linear & exponential regression. Data Day Grind Hackathon project made in 24 hours. ',
+			imgurl: 'images/portfolio/project.jpg',
+			github: [ { type: 'React', url: 'https://github.com/IdleScV/06-27-DataDayGrind' } ],
+			demourl: 'https://covid-tracer.netlify.app/',
+			youtubedemo: 'https://www.youtube.com/watch?v=0TzISZQBsUQ&feature=youtu.be'
 		}
 	],
-	testimonials: [
-		{
-			description: 'This is a sample testimonial',
-			name: 'Some technical guy'
-		},
-		{
-			description: 'This is a sample testimonial',
-			name: 'Some technical guy'
-		}
-	],
+	testimonials: [],
 	resumeUrl: 'https://docdro.id/cHOuyCu'
 };
 
