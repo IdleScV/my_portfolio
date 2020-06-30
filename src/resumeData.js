@@ -131,7 +131,7 @@ let resumeData = {
 		}
 	],
 	testimonials: [],
-	resumeUrl: 'https://docdro.id/cHOuyCu'
+	resumeUrl: 'https://docdro.id/FW7KIRU'
 };
 
 export default resumeData;
