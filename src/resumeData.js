@@ -87,6 +87,15 @@ let resumeData = {
 
 	portfolio: [
 		{
+			name: 'Covid-Tracer',
+			description:
+				'Covid-19 data visualization with predictions using linear & exponential regression. Data Day Grind Hackathon project made in 24 hours. ',
+			imgurl: 'images/portfolio/project.jpg',
+			github: [ { type: 'React', url: 'https://github.com/IdleScV/06-27-DataDayGrind' } ],
+			demourl: 'https://covid-tracer.netlify.app/',
+			youtubedemo: 'https://www.youtube.com/watch?v=0TzISZQBsUQ&feature=youtu.be'
+		},
+		{
 			name: 'Path',
 			description:
 				'View and create timelines for real or fictional people. Get to know what a person did and what they lived through. ',
@@ -97,6 +106,17 @@ let resumeData = {
 			],
 			demourl: 'https://idlescv.github.io/Path_frontend/',
 			youtubedemo: 'https://youtu.be/YD6uRh0HR6E'
+		},
+
+		{
+			name: 'Battle-Code',
+			description: 'A coding challenge game where players compete 1 on 1 to see who solves the algorithm first.',
+			imgurl: 'images/portfolio/project2.png',
+			github: [
+				{ type: 'Vanilla JS Front End', url: 'https://github.com/IdleScV/MOD-3-Project' },
+				{ type: 'Rails Back End', url: 'https://github.com/bumbot/mod3project' }
+			],
+			youtubedemo: 'https://youtu.be/j96bmqo8Jns'
 		},
 		{
 			name: 'Draw-Off',
@@ -109,29 +129,10 @@ let resumeData = {
 			],
 			demourl: 'https://draw-off-app.herokuapp.com/',
 			youtubedemo: 'https://youtu.be/4vn4oCgs-wc'
-		},
-		{
-			name: 'Battle-Code',
-			description: 'A coding challenge game where players compete 1 on 1 to see who solves the algorithm first.',
-			imgurl: 'images/portfolio/project2.png',
-			github: [
-				{ type: 'Vanilla JS Front End', url: 'https://github.com/IdleScV/MOD-3-Project' },
-				{ type: 'Rails Back End', url: 'https://github.com/bumbot/mod3project' }
-			],
-			youtubedemo: 'https://youtu.be/j96bmqo8Jns'
-		},
-		{
-			name: 'Covid-Tracer',
-			description:
-				'Covid-19 data visualization with predictions using linear & exponential regression. Data Day Grind Hackathon project made in 24 hours. ',
-			imgurl: 'images/portfolio/project.jpg',
-			github: [ { type: 'React', url: 'https://github.com/IdleScV/06-27-DataDayGrind' } ],
-			demourl: 'https://covid-tracer.netlify.app/',
-			youtubedemo: 'https://www.youtube.com/watch?v=0TzISZQBsUQ&feature=youtu.be'
 		}
 	],
 	testimonials: [],
-	resumeUrl: 'https://docdro.id/FW7KIRU'
+	resumeUrl: 'https://docdro.id/vn0u7J5'
 };
 
 export default resumeData;
