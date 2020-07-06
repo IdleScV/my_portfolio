@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 import ProjectCard from './Container/projectCard';
 
-const THRESHOLD = [ 0.75 ];
+const THRESHOLD = [ 0.2 ];
 function Portfolio({ resumeData, currentPageSet }) {
 	const [ ref, inView ] = useInView({ threshold: THRESHOLD });
 
