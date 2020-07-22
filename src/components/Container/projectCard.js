@@ -25,35 +25,39 @@ function ProjectCard({ item, i }) {
 					</div>
 				</div>
 				<div className="back">
+					{item.demourl ? (
+						<a
+							href={item.demourl}
+							alt="demo-link"
+							className="demositelink "
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							CLICK HERE FOR DEMO!
+						</a>
+					) : (
+						<div />
+					)}
 					<p className="project-snippet">{item.description}</p>
-					<div className="details">
-						{item.demourl ? (
-							<a
-								href={item.demourl}
-								alt="demo-link"
-								className="demositelink "
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								WEBSITE
-							</a>
-						) : null}
-						<br />
-						<i className="fa fa-github"> Code : </i>
-						{item.github.map((x, i) => {
-							return (
-								<a
-									key={i}
-									href={x.url}
-									alt={x.type}
-									className="githublink"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									{x.type}
-								</a>
-							);
-						})}
+					<div className="github">
+						<div>
+							{item.github.map((x, i) => {
+								return (
+									<i className="fa fa-github">
+										<a
+											key={i}
+											href={x.url}
+											alt={x.type}
+											className="githublink"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											{x.type}
+										</a>
+									</i>
+								);
+							})}
+						</div>
 					</div>
 				</div>
 			</ReactCardFlip>
