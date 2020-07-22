@@ -401,27 +401,35 @@ ul#nav li.current a {
 
 .moving-item {
 	margin: 5px;
-	padding: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
 }
 
-.moving-item .demo-video {
-	width: 100%;
+.moving-item button {
+	background-color: tomato;
+	width: 180px;
+	font-size: small;
+	margin: auto;
 }
 
 .moving-item .front,
 .moving-item .back {
-	width: 450px;
-	height: 300px;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	width: 350px;
+	height: 225px;
+	background-color: transparent;
 }
 
+.moving-item .front {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.moving-item .front .demo-video {
+	border-radius: 10px;
+}
 @media only screen and (max-width: 780px) {
 }
 
