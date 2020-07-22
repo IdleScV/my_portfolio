@@ -417,8 +417,10 @@ ul#nav li.current a {
 .moving-item .front,
 .moving-item .back {
 	width: 350px;
-	height: 225px;
-	background-color: transparent;
+	height: 220px;
+	margin-bottom: 5px;
+	background-color: rgb(37, 37, 37);
+	border-radius: 10px;
 }
 
 .moving-item .demo-video {
@@ -429,7 +431,7 @@ ul#nav li.current a {
 
 .moving-item .back {
 	border-radius: 10px;
-	background-color: rgb(37, 37, 37);
+
 	color: white;
 	padding: 15px;
 	display: flex;
