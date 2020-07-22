@@ -1,68 +1,78 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
+import ReactCardFlip from 'react-card-flip';
 
 function ProjectCard({ item, i }) {
-	const [ display, setDisplay ] = useState('front');
+	const [ isFlipped, setisFlipped ] = useState(false);
 	return (
 		<div key={i} className="moving-item">
-			<div className="flip-card">
-				<div className="inner">
-					<div className="front">
-						<div className="description">
-							<h2>{item.name}</h2>
-							<p className="project-snippet">{item.description}</p>
-							<div className="demo-video">
-								{item.youtubedemo ? (
-									<ReactPlayer
-										controls
-										width="100%"
-										height="220px"
-										id="youtube-video"
-										url={item.youtubedemo}
-										rel="noopener noreferrer"
-									/>
-								) : (
-									<div className="comingsoon">Demo Video Coming Soon</div>
-								)}
-							</div>
-							<br />
-							<button>Details</button>
-						</div>
+			<h2>{item.name}</h2>
+			<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+				<div className="front">
+					<div className="demo-video">
+						{item.youtubedemo ? (
+							<ReactPlayer
+								controls
+								width="100%"
+								height="220px"
+								id="youtube-video"
+								url={item.youtubedemo}
+								rel="noopener noreferrer"
+							/>
+						) : (
+							<div className="comingsoon">Demo Video Coming Soon</div>
+						)}
 					</div>
-					<div className="back">
-						<div className="details">
-							{item.demourl ? (
+
+					<button
+						onClick={() => {
+							setisFlipped(!isFlipped);
+						}}
+					>
+						Details
+					</button>
+				</div>
+				<div className="back">
+					<p className="project-snippet">{item.description}</p>
+					<div className="details">
+						{item.demourl ? (
+							<a
+								href={item.demourl}
+								alt="demo-link"
+								className="demositelink "
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Working Demo Site
+							</a>
+						) : null}
+						<br />
+
+						<i className="fa fa-github"> Code : </i>
+						{item.github.map((x, i) => {
+							return (
 								<a
-									href={item.demourl}
-									alt="demo-link"
-									className="demositelink "
+									key={i}
+									href={x.url}
+									alt={x.type}
+									className="githublink"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									Working Demo Site
+									{x.type}
 								</a>
-							) : null}
-							<br />
-
-							<i className="fa fa-github"> Code : </i>
-							{item.github.map((x, i) => {
-								return (
-									<a
-										key={i}
-										href={x.url}
-										alt={x.type}
-										className="githublink"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										{x.type}
-									</a>
-								);
-							})}
-						</div>
+							);
+						})}
 					</div>
+					<button
+						onClick={() => {
+							setisFlipped(!isFlipped);
+						}}
+					>
+						Demo Video
+					</button>
 				</div>
-			</div>
+			</ReactCardFlip>
 		</div>
 	);
 }
